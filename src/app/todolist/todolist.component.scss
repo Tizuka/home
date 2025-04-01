@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+body {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.todo-static {
+    min-height: 400px;
+    min-width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.todo-header { 
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.todo-list {
+    padding: 6px;
+}
+
+.todo-list h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.todo-single {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.todo-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    appearance: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.todo-checkbox:checked {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.todo-checkbox:checked::before {
+    content: ''; 
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.todo-single p {
+    flex: 1;
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.todo-static {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.todo-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    padding: 7px 30px;
+    background: #f84747;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.d-flex.align-items-center {
+    gap: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#close {
+    overflow: hidden;
+    position: relative;
+    border: none;
+    padding: 0;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    background: transparent;
+    color: #8a8a8a;
+    font: inherit;
+    text-indent: 100%;
+    cursor: pointer;
+}
+
+#close:focus {
+    outline: solid 0 transparent;
+}
+
+#close:before, #close:after {
+    position: absolute;
+    top: 15%;
+    left: calc(50% - .0625em);
+    width: .125em;
+    height: 70%;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: '';
+}
+
+#close:after {
+    transform: rotate(-45deg);
+}
+
+p {
+    padding-left: 4px;
+}
